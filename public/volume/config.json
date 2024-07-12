@@ -1,0 +1,30 @@
+{
+    "count": 6,
+    "options": [
+        {
+            "name": "TSP反演 PDK279+650",
+            "url": "volume/demo_000.raw.json"
+        },
+        {
+            "name": "Ⅲ级围岩 PDK299+750",
+            "url": "volume/demo_001.raw.json"
+        },
+        {
+            "name": "软弱围岩 D3K279+250",
+            "url": "volume/demo_005.raw.json"
+        },
+        {
+            "name": "高地应力 D4K282+750",
+            "url": "volume/demo_025.raw.json"
+        },
+        {
+            "name": "富水带 D4K280+500",
+            "url": "volume/demo_norm.raw.json"
+        },
+        {
+            "name": "破碎带 X1DK0+900",
+            "url": "volume/demo_fault.raw.json"
+        }
+    ],
+    "selected": "TSP反演 PDK279+650"
+}
