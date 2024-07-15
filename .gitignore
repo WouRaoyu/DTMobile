@@ -9,6 +9,8 @@
 .history
 .svn/
 
+__pycache__/
+
 node_modules/
 dist/
 

@@ -2,7 +2,7 @@
  * @ Author: WouRaoyu
  * @ Create Time: 2024-07-09 16:44:34
  * @ Modified by: WouRaoyu
- * @ Modified time: 2024-07-14 17:25:43
+ * @ Modified time: 2024-07-15 14:16:21
  * @ Description:
  -->
 
@@ -25,7 +25,7 @@
 
 <script>
 import axios from 'axios'
-import { Toast } from 'vant';
+import { showFailToast } from 'vant';
 import { ref } from 'vue';
 
 export default {
@@ -36,7 +36,7 @@ export default {
         const refreshing = ref(false);
 
         const onLoad = () => {
-            axios.get('http://localhost:8000/judge_list/', { timeout: 5000 })
+            axios.get('http://192.168.3.23:8000/judge_list/', { timeout: 5000 })
                 .then(response => {
                     if (refreshing.value) {
                         list.value = [];
@@ -47,7 +47,7 @@ export default {
                     list.value = response.data;
                 })
                 .catch(function () {
-                    Toast.fail('连接服务失败');
+                    showFailToast('连接服务失败');
                     loading.value = false;
                     finished.value = true;
                 });
